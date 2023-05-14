@@ -89,6 +89,8 @@ switch (ENVIRONMENT)
 		exit(1); // EXIT_ERROR
 }
 
+
+
 /*
  *---------------------------------------------------------------
  * SYSTEM DIRECTORY NAME
@@ -312,4 +314,6 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+require FCPATH . 'vendor/autoload.php';
+
 require_once BASEPATH.'core/CodeIgniter.php';
