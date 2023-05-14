@@ -75,12 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1:3306',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'projek_logistik',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'hostname' => $_ENV['DB_HOST'],
+	'username' => $_ENV['DB_USERNAME'],
+	'password' => $_ENV['DB_PASSWORD'],
+	'database' => $_ENV['DB_DATABASE'],
+	'dbdriver' => $_ENV['DB_CONNECTION'],
+	'dbprefix' => $_ENV['DB_PREFIX'],
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
